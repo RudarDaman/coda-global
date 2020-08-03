@@ -1,0 +1,14 @@
+.search {
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.input-box {
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: 0;
+  }
+}

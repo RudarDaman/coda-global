@@ -1,0 +1,65 @@
+<div class="container mt-5">
+  <div routerLink="/list-recipes" class="d-flex back-button">
+    <img src="/assets/img/left-arrow.svg" alt="<-">
+    <div class="mx-3">Go Back</div>
+  </div>
+  <div class="row my-3 details">
+    <div class="col-md-6">
+      <div class="video-container mb-3 position-relative">
+        <img src="/assets/img/img1.jpg" class="w-100" alt="Video Overlay"/>
+        <div class="overlay d-flex justify-content-center align-items-center">
+          <img src="/assets/img/play-icon-circle.png" alt="Play"/>
+        </div>
+      </div>
+      <div class="heading mb-3">
+        Ingredients
+      </div>
+      <div class="mb-5">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </div>
+      <div class="mb-3 heading">
+        How to prepare:
+      </div>
+      <div class="mb-3">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="mb-3">
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+      </div>
+      <div class="mb-3">
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </div>
+    </div>
+    <div class="col-md-6 text-right">
+      <div>Recipe</div>
+      <div class="recipe-name">Cheese Burst</div>
+      <div class="ratings d-flex justify-content-end mb-3">
+        <div class="rate mx-3">1/5</div>
+        <div class="stars mx-3">
+          <img src="/assets/img/icon-star.png" alt="Star" />
+        </div>
+      </div>
+      <div class="mb-3">
+        Description
+      </div>
+      <div class="mb-3">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+      </div>
+      <div class="mb-5 d-flex justify-content-between">
+        <div *ngFor="let circleDetail of circleDetails">
+          <app-circle-detail [detail]="circleDetail"></app-circle-detail>
+        </div>
+      </div>
+      <div class="mb-3 d-flex justify-content-end">
+        <div class="mx-3">{{ 'Favourite this recipe' | uppercase }}</div>
+        <div><img src="/assets/img/icon-heart-color.png" alt="Heart"/></div>
+      </div>
+      <hr class="my-5">
+      <div class="d-flex mb-3">ADD COMMENTS</div>
+      <div class="input-box mb-3"><textarea placeholder="Type something here..."></textarea></div>
+      <div class="submit-button">
+        ADD COMMENT
+      </div>
+    </div>
+  </div>
+</div>

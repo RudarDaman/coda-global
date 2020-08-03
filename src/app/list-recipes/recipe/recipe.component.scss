@@ -1,0 +1,60 @@
+.recipe {
+  overflow: hidden;
+  background: white;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-radius: 0 0 0 1rem;
+}
+
+::ng-deep .details {
+  padding: 1rem;
+  position: relative;
+
+  .gradient {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -1.8rem;
+    height: 2rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    font-family: Metropolis-Bold;
+  }
+
+  mark {
+    background: none;
+    color: yellow;
+    padding: 0.2em 0;
+  }
+}
+
+.black {
+  background: black;
+  color: white;
+
+  .gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, black 100%);
+  }
+}
+
+.white {
+  background: white;
+  color: black;
+
+  .gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  }
+}
